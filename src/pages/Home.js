@@ -108,7 +108,7 @@ function Home() {
 
     const deleteExpens = async (id) => {
         try {
-            const url = `https://xpense-xpert-api.onrender.com/expenses/${id}`;
+            const url = `https://xpense-xpert-api-ldwv.onrender.com/expenses/${id}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -131,7 +131,7 @@ function Home() {
 
     const fetchExpenses = async () => {
         try {
-            const url = `https://xpense-xpert-api.onrender.com/expenses`;
+            const url = `https://xpense-xpert-api-ldwv.onrender.com/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -167,7 +167,7 @@ function Home() {
                 amount: transactionType === 'expense' ? -Math.abs(amountValue) : Math.abs(amountValue)
             };
 
-            const url = `https://xpense-xpert-api.onrender.com/expenses`;
+            const url = `https://xpense-xpert-api-ldwv.onrender.com/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),

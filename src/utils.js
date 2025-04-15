@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css"
 // API URL - Use environment variable if available, otherwise fallback to default values
 export const APIUrl = process.env.REACT_APP_API_URL || 
   (process.env.NODE_ENV === "production" 
-    ? "https://xpense-xpert-api.onrender.com"
+    ? "https://xpense-xpert-api-ldwv.onrender.com"
     : "http://localhost:8080")
 
 // Toast notification helpers
